@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenSDLC Presentation Draft 02 - Slide 04</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css">
+  <link rel="stylesheet" href="./assets/presentation.css">
+</head>
+<body class="slide-page" data-home="index.html" data-prev="slide-03.html" data-next="slide-05.html" data-last="slide-08.html">
+  <div class="page-shell">
+    <header class="page-header">
+      <div class="brand">OpenSDLC Presentation Draft 02</div>
+      <div>Slide 04 of 08 · Current Capabilities</div>
+    </header>
+
+    <main class="slide-frame">
+      <div class="slide-number">04</div>
+      <div class="eyebrow">Current Capabilities</div>
+      <h1 class="section-title" style="margin-top: 18px;">OpenSDLC는 핵심 운영 모델과 통제 장치를 이미 구조화하고 있습니다.</h1>
+      <p class="section-subtitle">
+        현재 상태는 “아이디어만 있는 개념”이 아니라, artifact, 검증 게이트, iteration reporting까지 한 사이클이 맞물리는
+        운영 프레임워크 수준으로 정리되어 있습니다.
+      </p>
+
+      <section class="impact-grid">
+        <article class="impact-card">
+          <div class="impact-index">01</div>
+          <h3>요구사항 구조화</h3>
+          <p>`UseCaseModelArtifact`로 모호한 요청을 구현 가능하고 테스트 가능한 기준으로 정리합니다.</p>
+        </article>
+        <article class="impact-card">
+          <div class="impact-index">02</div>
+          <h3>테스트 설계 선행</h3>
+          <p>`TestDesignArtifact`를 구현 전에 만들어, 무엇을 검증할지 먼저 고정합니다.</p>
+        </article>
+        <article class="impact-card">
+          <div class="impact-index">03</div>
+          <h3>구현 추적</h3>
+          <p>`ImplementationArtifact`로 어떤 코드가 어떤 요구사항을 반영했는지 연결합니다.</p>
+        </article>
+        <article class="impact-card">
+          <div class="impact-index">04</div>
+          <h3>증거 중심 테스트</h3>
+          <p>`TestReportArtifact`에 실행 결과, defect, satisfaction score, evidence를 남깁니다.</p>
+        </article>
+      </section>
+
+      <section class="section-stack">
+        <article class="panel">
+          <div class="card-head">
+            <h3 class="panel-title">이미 갖춘 핵심 산출물</h3>
+            <a class="button secondary appendix-link" href="./appendix-01.html">
+              <span class="appendix-highlight">OpenSDLC Dashboard</span>: 운영 상태와 검증 결과를 대시보드로 확인
+              <span class="appendix-icon" aria-hidden="true">></span>
+            </a>
+          </div>
+          <div class="artifact-groups">
+            <div class="artifact-group">
+              <h4>요구사항과 검증 기준</h4>
+              <div class="artifact-items">
+                <div class="artifact-item"><strong>UC</strong><br>UseCaseModelArtifact</div>
+                <div class="artifact-arrow" aria-hidden="true">→</div>
+                <div class="artifact-item"><strong>TEST-DESIGN</strong><br>TestDesignArtifact</div>
+              </div>
+              <p>모호한 요청을 실행 가능한 use case와 검증 시나리오로 먼저 구조화합니다.</p>
+            </div>
+            <div class="artifact-group">
+              <h4>구현과 실행 증거</h4>
+              <div class="artifact-items">
+                <div class="artifact-item"><strong>IMPL</strong><br>ImplementationArtifact</div>
+                <div class="artifact-arrow" aria-hidden="true">→</div>
+                <div class="artifact-item"><strong>TEST-EXECUTION</strong><br>TestReportArtifact</div>
+              </div>
+              <p>어떤 코드가 반영되었는지와 실제 실행 결과, defect, evidence를 연결해 남깁니다.</p>
+            </div>
+            <div class="artifact-group">
+              <h4>반복 개선과 품질 게이트</h4>
+              <div class="artifact-items">
+                <div class="artifact-item"><strong>FB</strong><br>FeedbackArtifact</div>
+                <div class="artifact-arrow" aria-hidden="true">→</div>
+                <div class="artifact-item"><strong>VAL</strong><br>ValidationReportArtifact</div>
+              </div>
+              <p>다음 반복 지시와 독립 검증 판정을 분리해 운영 통제와 개선 루프를 유지합니다.</p>
+            </div>
+            <div class="artifact-group">
+              <h4>이터레이션 종합 평가</h4>
+              <div class="artifact-items">
+                <div class="artifact-item"><strong>Assessment</strong><br>iteration_assessment</div>
+              </div>
+              <p>각 반복이 얼마나 목표에 근접했는지, 다음 이터레이션에서 무엇을 줄이고 늘릴지 판단합니다.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel">
+          <h3 class="panel-title">OpenSDLC 구조의 강점</h3>
+          <div class="reason-list wide">
+            <div class="reason-block">
+              <strong>규범과 실행이 같은 모델로 정렬됨</strong>
+              <p>`constitution`과 `engine`이 같은 운영 관점으로 맞물려 있어, 원칙과 실행 규칙이 분리되지 않습니다.</p>
+            </div>
+            <div class="reason-block">
+              <strong>샘플 workflow로 실제 작동성을 점검함</strong>
+              <p>리허설 기록과 sample workflow를 통해 이 구조가 문장 수준이 아니라 실제 작업 전환 흐름으로 작동하는지 확인했습니다.</p>
+            </div>
+            <div class="reason-block">
+              <strong>운영 확장 지점까지 이미 고려함</strong>
+              <p>선택적 runtime reporting과 View 연동처럼, 이후 운영 가시성을 키울 지점도 현재 구조 안에서 이어갈 수 있습니다.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div class="deck-nav">
+      <div class="nav-group">
+        <a class="nav-link" href="./index.html">Index</a>
+        <a class="nav-link" href="./slide-01.html">01</a>
+        <a class="nav-link" href="./slide-02.html">02</a>
+        <a class="nav-link" href="./slide-03.html">03</a>
+        <a class="nav-link current" href="./slide-04.html">04</a>
+        <a class="nav-link" href="./slide-05.html">05</a>
+        <a class="nav-link" href="./slide-06.html">06</a>
+        <a class="nav-link" href="./slide-07.html">07</a>
+        <a class="nav-link" href="./slide-08.html">08</a>
+        <a class="nav-link" href="./appendix-01.html">A1</a>
+      </div>
+      <div class="nav-links">
+        <a class="nav-link" href="./slide-03.html">이전 장표</a>
+        <a class="nav-link" href="./slide-05.html">다음 장표</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/presentation.js"></script>
+</body>
+</html>

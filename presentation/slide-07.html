@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenSDLC Presentation Draft 02 - Slide 07</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css">
+  <link rel="stylesheet" href="./assets/presentation.css">
+</head>
+<body class="slide-page" data-home="index.html" data-prev="slide-06.html" data-next="slide-08.html" data-last="slide-08.html">
+  <div class="page-shell">
+    <header class="page-header">
+      <div class="brand">OpenSDLC Presentation Draft 02</div>
+      <div>Slide 07 of 08 · Why It Is Safe</div>
+    </header>
+
+    <main class="slide-frame">
+      <div class="slide-number">07</div>
+      <div class="eyebrow">Why It Is Safe</div>
+      <h1 class="section-title" style="margin-top: 18px;">운영 조직이 OpenSDLC를 안전하게 느낄 수 있는 이유는, AI의 자율성보다 통제 장치를 더 강하게 두기 때문입니다.</h1>
+      <p class="section-subtitle">
+        OpenSDLC가 강조하는 핵심은 `Validation Over Self-Assertion`입니다.
+        즉 AI가 잘됐다고 말하는 것보다, 독립 검증과 물리적 artifact가 더 우선합니다.
+      </p>
+
+      <section class="impact-grid">
+        <article class="impact-card">
+          <div class="impact-index">01</div>
+          <h3>독립 품질 게이트</h3>
+          <p>모든 생산 단계 뒤에 `ValidationReportArtifact`가 따라오며, `pass / warning / fail`로 다음 진행을 통제합니다.</p>
+        </article>
+        <article class="impact-card">
+          <div class="impact-index">02</div>
+          <h3>전방향 추적성</h3>
+          <p>`source_artifact_ids` 중심으로 요구사항, 테스트 설계, 구현, 실행 결과를 연결해 책임 위치를 추적할 수 있습니다.</p>
+        </article>
+        <article class="impact-card">
+          <div class="impact-index">03</div>
+          <h3>사람 승인 유지</h3>
+          <p>요구사항 확정과 반복 지속, 최종 종료 같은 중요한 판단은 사람이 승인합니다.</p>
+        </article>
+        <article class="impact-card">
+          <div class="impact-index">04</div>
+          <h3>단일 활성 역할</h3>
+          <p>`Sequential Single-Agent Execution`으로 동시에 여러 역할이 뒤섞이지 않아 작업 전환과 책임 경계가 선명합니다.</p>
+        </article>
+      </section>
+
+      <section class="columns" style="margin-top: 20px;">
+        <article class="panel">
+          <h3 class="panel-title">운영자 관점에서 의미</h3>
+          <ul>
+            <li>AI가 만든 결과를 나중에 설명할 수 있습니다.</li>
+            <li>문제가 생겨도 어느 단계에서 어긋났는지 역추적할 수 있습니다.</li>
+            <li>속도 개선과 품질 통제를 동시에 가져갈 수 있습니다.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3 class="panel-title">조직 리더 관점에서 의미</h3>
+          <ul>
+            <li>전면 AI 전환이 아니라 통제 가능한 운영 실험으로 시작할 수 있습니다.</li>
+            <li>검수 기준과 승인 책임이 사라지지 않습니다.</li>
+            <li>AI 도입을 도구 구매가 아니라 운영 설계 과제로 다룰 수 있습니다.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <div class="deck-nav">
+      <div class="nav-group">
+        <a class="nav-link" href="./index.html">Index</a>
+        <a class="nav-link" href="./slide-01.html">01</a>
+        <a class="nav-link" href="./slide-02.html">02</a>
+        <a class="nav-link" href="./slide-03.html">03</a>
+        <a class="nav-link" href="./slide-04.html">04</a>
+        <a class="nav-link" href="./slide-05.html">05</a>
+        <a class="nav-link" href="./slide-06.html">06</a>
+        <a class="nav-link current" href="./slide-07.html">07</a>
+        <a class="nav-link" href="./slide-08.html">08</a>
+        <a class="nav-link" href="./appendix-01.html">A1</a>
+      </div>
+      <div class="nav-links">
+        <a class="nav-link" href="./slide-06.html">이전 장표</a>
+        <a class="nav-link" href="./slide-08.html">다음 장표</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/presentation.js"></script>
+</body>
+</html>

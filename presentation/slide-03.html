@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenSDLC Presentation Draft 02 - Slide 03</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css">
+  <link rel="stylesheet" href="./assets/presentation.css">
+</head>
+<body class="slide-page" data-home="index.html" data-prev="slide-02.html" data-next="slide-04.html" data-last="slide-08.html">
+  <div class="page-shell">
+    <header class="page-header">
+      <div class="brand">OpenSDLC Presentation Draft 02</div>
+      <div>Slide 03 of 08 · Current Structure</div>
+    </header>
+
+    <main class="slide-frame">
+      <div class="slide-number">03</div>
+      <div class="eyebrow">Current Structure</div>
+      <h1 class="section-title" style="margin-top: 18px;">OpenSDLC는 사용자 관리형 AI 기반의 개발 공정 자동화 프로세스로, 규범, 실행 엔진, 실제 작업공간이 분리된 운영 구조를 갖고 있습니다.</h1>
+      <p class="section-subtitle">
+        `constitution`이 운영 원칙의 상한선을 정의하고, `engine`이 역할, 프롬프트, template, workflow를 규정하며,
+        `workspace`가 실제 프로젝트 산출물과 코드를 축적하는 실행 영역이 됩니다.
+      </p>
+
+      <section class="mini-grid">
+        <article class="mini-card">
+          <div class="mini-index">Layer 01</div>
+          <h3>Constitution</h3>
+          <p>상위 규범 계층입니다. `Artifact-Driven Execution`, `Spiral Iteration`, `Human-Guided Development`, `No-Shortcut Principle` 같은 원칙을 고정합니다.</p>
+        </article>
+        <article class="mini-card">
+          <div class="mini-index">Layer 02</div>
+          <h3>Engine</h3>
+          <p>역할 정의, prompt, template, 검증 게이트, workflow semantics를 담는 실행 엔진입니다. 실질적인 운영 규칙은 이 계층에 응축됩니다.</p>
+        </article>
+        <article class="mini-card">
+          <div class="mini-index">Layer 03</div>
+          <h3>Workspace</h3>
+          <p>실제 대상 프로젝트가 진행되는 영역입니다. iteration 산출물과 `dev/` 코드가 누적되며, 엔진 규칙을 적용받는 실행 현장입니다.</p>
+        </article>
+      </section>
+
+      <section class="structure-stack">
+        <article class="panel process-wide">
+          <h3 class="panel-title">주요 역할 구조와 작업 전환 흐름</h3>
+          <div class="process-main-grid">
+            <div class="process-step strong">사용자</div>
+            <div class="process-main-arrow">→</div>
+            <div class="process-step strong">PMAgent</div>
+            <div class="process-main-arrow">→</div>
+            <div class="process-step">ReqAgent</div>
+            <div class="process-main-arrow">→</div>
+            <div class="process-step">TestAgent · Design</div>
+            <div class="process-main-arrow">→</div>
+            <div class="process-step">CodeAgent</div>
+            <div class="process-main-arrow">→</div>
+            <div class="process-step">TestAgent · Execution</div>
+            <div class="process-main-arrow">→</div>
+            <div class="process-step">CoordAgent</div>
+            <div class="process-main-arrow">→</div>
+            <div class="process-step strong">다음 이터레이션</div>
+          </div>
+          <div class="validator-support">
+            <div class="validator-bar"><strong>ValidatorAgent</strong>&nbsp;· 검증 게이트</div>
+            <p class="validator-copy">요구사항 구조화, 테스트 설계, 구현, 실행 검증의 각 작업 전환 지점에서 독립 판정을 내려 전체 흐름을 떠받치는 구조입니다.</p>
+          </div>
+        </article>
+
+        <section class="meaning-row">
+          <article class="meaning-card">
+            <strong>사용자 접점이 일원화됩니다</strong>
+            <p>사용자 질의는 `PMAgent`로 모여 운영 통제 지점과 승인 책임이 분명해집니다.</p>
+          </article>
+          <article class="meaning-card">
+            <strong>생산과 검증이 분리됩니다</strong>
+            <p>생산 역할과 검증 역할이 분리되어 AI 자기확신에 의존하지 않는 구조를 만듭니다.</p>
+          </article>
+          <article class="meaning-card">
+            <strong>규범과 실행을 함께 관리합니다</strong>
+            <p>실행 영역과 규범 영역이 분리되어도 같은 운영 모델로 연결돼 프로세스 이탈을 관리하기 쉽습니다.</p>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <div class="deck-nav">
+      <div class="nav-group">
+        <a class="nav-link" href="./index.html">Index</a>
+        <a class="nav-link" href="./slide-01.html">01</a>
+        <a class="nav-link" href="./slide-02.html">02</a>
+        <a class="nav-link current" href="./slide-03.html">03</a>
+        <a class="nav-link" href="./slide-04.html">04</a>
+        <a class="nav-link" href="./slide-05.html">05</a>
+        <a class="nav-link" href="./slide-06.html">06</a>
+        <a class="nav-link" href="./slide-07.html">07</a>
+        <a class="nav-link" href="./slide-08.html">08</a>
+        <a class="nav-link" href="./appendix-01.html">A1</a>
+      </div>
+      <div class="nav-links">
+        <a class="nav-link" href="./slide-02.html">이전 장표</a>
+        <a class="nav-link" href="./slide-04.html">다음 장표</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/presentation.js"></script>
+</body>
+</html>

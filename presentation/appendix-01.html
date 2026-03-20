@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenSDLC Presentation Draft 02 - Appendix 01</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css">
+  <link rel="stylesheet" href="./assets/presentation.css">
+</head>
+<body class="slide-page" data-home="index.html" data-prev="slide-04.html" data-last="appendix-01.html">
+  <div class="page-shell">
+    <header class="page-header">
+      <div class="brand">OpenSDLC Presentation Draft 02</div>
+      <div>Appendix 01 · OpenSDLC Dashboard</div>
+    </header>
+
+    <main class="slide-frame">
+      <div class="slide-number">A1</div>
+      <div class="eyebrow">Appendix</div>
+      <h1 class="section-title" style="margin-top: 18px;">OpenSDLC 대시보드 웹앱</h1>
+      <p class="section-subtitle">
+        OpenSDLC는 artifact, validation, iteration 상태를 문서로만 관리하는 것이 아니라,
+        운영자가 현재 진행 상황과 검증 결과를 한 화면에서 확인할 수 있는 대시보드 형태로도 확장할 수 있습니다.
+      </p>
+
+      <section class="section-stack">
+        <article class="panel evidence-panel">
+          <div class="appendix-carousel" data-appendix-carousel>
+            <div class="carousel-toolbar">
+              <div class="carousel-title">OpenSDLC Dashboard Screens</div>
+              <div class="carousel-controls">
+                <button class="carousel-button" type="button" data-carousel-prev>Prev</button>
+                <div class="carousel-tabs">
+                  <button class="carousel-tab is-active" type="button" data-carousel-tab>01</button>
+                  <button class="carousel-tab" type="button" data-carousel-tab>02</button>
+                  <button class="carousel-tab" type="button" data-carousel-tab>03</button>
+                  <button class="carousel-tab" type="button" data-carousel-tab>04</button>
+                  <button class="carousel-tab" type="button" data-carousel-tab>05</button>
+                </div>
+                <button class="carousel-button" type="button" data-carousel-next>Next</button>
+              </div>
+            </div>
+
+            <div class="carousel-stage">
+              <figure class="carousel-figure">
+                <img
+                  class="evidence-shot"
+                  src="./assets/images/open-sdlc-view-screenshot-01.png"
+                  alt="OpenSDLC View 대시보드 overview 화면"
+                  data-carousel-image
+                >
+                <figcaption class="evidence-caption" data-carousel-caption>
+                  OpenSDLC Dashboard overview 화면. 현재 iteration, active stage, quality snapshot, canonical pipeline을 한 번에 보여줍니다.
+                </figcaption>
+              </figure>
+
+              <div class="carousel-copy">
+                <div class="eyebrow-small" data-carousel-eyebrow>Overview</div>
+                <h3 data-carousel-title>현재 진행 상태를 한 화면에서 요약해 보여주는 메인 화면</h3>
+                <p data-carousel-lead>
+                  프로젝트, iteration, active stage, 품질 상태를 한 번에 보여주어 현재 운영 상황을 빠르게 파악할 수 있게 해줍니다.
+                </p>
+                <div class="carousel-point-list" data-carousel-points>
+                  <div class="carousel-point-card">
+                    <strong>현재 상태 요약</strong>
+                    <p>프로젝트, iteration, current stage, active agent를 한 번에 확인할 수 있습니다.</p>
+                  </div>
+                  <div class="carousel-point-card">
+                    <strong>품질 스냅샷</strong>
+                    <p>latest validator, warning, rework 같은 핵심 상태를 빠르게 읽게 해줍니다.</p>
+                  </div>
+                  <div class="carousel-point-card">
+                    <strong>파이프라인 가시화</strong>
+                    <p>canonical pipeline이 어디까지 진행됐는지 즉시 파악할 수 있어 운영 보고의 시작점이 됩니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <script type="application/json" data-carousel-items>
+[
+  {
+    "image": "./assets/images/open-sdlc-view-screenshot-01.png",
+    "alt": "OpenSDLC View 대시보드 overview 화면",
+    "caption": "OpenSDLC Dashboard overview 화면. 현재 iteration, active stage, quality snapshot, canonical pipeline을 한 번에 보여줍니다.",
+    "eyebrow": "Overview",
+    "title": "현재 진행 상태를 한 화면에서 요약해 보여주는 메인 화면",
+    "lead": "프로젝트, iteration, active stage, 품질 상태를 한 번에 보여주어 현재 운영 상황을 빠르게 파악할 수 있게 해줍니다.",
+    "points": [
+      {
+        "title": "현재 상태 요약",
+        "copy": "프로젝트, iteration, current stage, active agent를 한 번에 확인할 수 있습니다."
+      },
+      {
+        "title": "품질 스냅샷",
+        "copy": "latest validator, warning, rework 같은 핵심 상태를 빠르게 읽게 해줍니다."
+      },
+      {
+        "title": "파이프라인 가시화",
+        "copy": "canonical pipeline이 어디까지 진행됐는지 즉시 파악할 수 있어 운영 보고의 시작점이 됩니다."
+      }
+    ]
+  },
+  {
+    "image": "./assets/images/open-sdlc-view-screenshot-02.png",
+    "alt": "OpenSDLC View execution timeline 화면",
+    "caption": "Execution Timeline 화면. 단계별 handoff와 artifact detail을 따라 작업 전환 흐름을 확인할 수 있습니다.",
+    "eyebrow": "Execution Timeline",
+    "title": "artifact handoff와 단계 전환 흐름을 추적하는 화면",
+    "lead": "어떤 artifact가 어떤 검증을 거쳐 다음 단계로 넘어갔는지 확인할 수 있어, 작업 전환의 근거와 병목 지점을 함께 설명할 수 있습니다.",
+    "points": [
+      {
+        "title": "단계별 진행 추적",
+        "copy": "requirements에서 validation까지 어떤 지점이 완료됐고 어떤 지점이 대기 중인지 시간축처럼 읽을 수 있습니다."
+      },
+      {
+        "title": "artifact detail 확인",
+        "copy": "선택된 artifact의 status, handoff, next action이 함께 보여 작업 전환 근거를 설명할 수 있습니다."
+      },
+      {
+        "title": "병목 식별",
+        "copy": "pending 구간이 시각적으로 드러나므로 현재 병목이 어디인지 빠르게 파악할 수 있습니다."
+      }
+    ]
+  },
+  {
+    "image": "./assets/images/open-sdlc-view-screenshot-03.png",
+    "alt": "OpenSDLC View validation center 화면",
+    "caption": "Validation Center 화면. validation result, check summary, decision detail을 통해 게이트 상태를 확인할 수 있습니다.",
+    "eyebrow": "Validation Center",
+    "title": "검증 게이트의 판정 결과와 근거를 보여주는 화면",
+    "lead": "validation 결과와 체크 항목을 함께 보여주어, 현재 단계가 왜 통과되었는지 또는 왜 보류되었는지를 분명하게 설명할 수 있습니다.",
+    "points": [
+      {
+        "title": "검증 결과 조회",
+        "copy": "target, stage, result, status를 기준으로 최신 validation 결과를 필터링해 볼 수 있습니다."
+      },
+      {
+        "title": "판정 기준 가시화",
+        "copy": "schema, traceability, evidence, no regression 같은 체크 항목이 요약되어 게이트 품질을 설명할 수 있습니다."
+      },
+      {
+        "title": "의사결정 근거 확보",
+        "copy": "decision detail에 warning note와 recommended action이 함께 보여 다음 진행 판단의 근거가 남습니다."
+      }
+    ]
+  },
+  {
+    "image": "./assets/images/open-sdlc-view-screenshot-04.png",
+    "alt": "OpenSDLC View conversation 화면",
+    "caption": "Conversation 화면. agent activity, verified feed, message detail을 통해 실행 이력을 맥락과 함께 확인할 수 있습니다.",
+    "eyebrow": "Conversation",
+    "title": "작업 이력과 메시지 맥락을 함께 확인하는 화면",
+    "lead": "역할별 활동 이력과 검증된 메시지를 함께 보여주어, 실행 과정의 맥락과 설명 가능성을 높여 줍니다.",
+    "points": [
+      {
+        "title": "활동 이력 확인",
+        "copy": "ReqAgent, ValidatorAgent, TestAgent 등 역할별 활동이 feed로 정리되어 작업 흐름을 되짚을 수 있습니다."
+      },
+      {
+        "title": "검증된 메시지 구분",
+        "copy": "verified 상태가 표시되어 어떤 메시지가 검증 근거와 연결되는지 빠르게 파악할 수 있습니다."
+      },
+      {
+        "title": "메시지 상세 추적",
+        "copy": "선택된 메시지의 artifact, verification, workspace evidence를 함께 확인할 수 있습니다."
+      }
+    ]
+  },
+  {
+    "image": "./assets/images/open-sdlc-view-screenshot-05.png",
+    "alt": "OpenSDLC View iteration review 화면",
+    "caption": "Iteration Review 화면. completion matrix와 approval 상태를 통해 반복 단위 완료도를 검토할 수 있습니다.",
+    "eyebrow": "Iteration Review",
+    "title": "iteration 완료도와 승인 준비 상태를 검토하는 화면",
+    "lead": "반복 단위에서 어떤 artifact가 준비되었고 승인 전 상태가 어떤지를 한 번에 확인할 수 있어, 종료 판단과 다음 단계 논의를 지원합니다.",
+    "points": [
+      {
+        "title": "완료도 매트릭스",
+        "copy": "UC, TEST-DESIGN, validation 등 각 artifact의 존재와 완료 상태를 한 번에 확인할 수 있습니다."
+      },
+      {
+        "title": "검토 요약 제공",
+        "copy": "defects, warnings, failed gates, next iteration 여부가 정리되어 반복 종료 판단을 지원합니다."
+      },
+      {
+        "title": "승인 준비 상태 확인",
+        "copy": "final approval과 review notes가 함께 보여 사용자 승인 전 단계의 준비 상태를 설명할 수 있습니다."
+      }
+    ]
+  }
+]
+            </script>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div class="deck-nav">
+      <div class="nav-group">
+        <a class="nav-link" href="./index.html">Index</a>
+        <a class="nav-link" href="./slide-01.html">01</a>
+        <a class="nav-link" href="./slide-02.html">02</a>
+        <a class="nav-link" href="./slide-03.html">03</a>
+        <a class="nav-link" href="./slide-04.html">04</a>
+        <a class="nav-link" href="./slide-05.html">05</a>
+        <a class="nav-link" href="./slide-06.html">06</a>
+        <a class="nav-link" href="./slide-07.html">07</a>
+        <a class="nav-link" href="./slide-08.html">08</a>
+        <a class="nav-link current" href="./appendix-01.html">A1</a>
+      </div>
+      <div class="nav-links">
+        <a class="nav-link" href="./slide-04.html">관련 본문 장표</a>
+        <a class="nav-link" href="./index.html">인덱스로</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/presentation.js"></script>
+</body>
+</html>

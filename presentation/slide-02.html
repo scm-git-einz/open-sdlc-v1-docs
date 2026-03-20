@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenSDLC Presentation Draft 02 - Slide 02</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css">
+  <link rel="stylesheet" href="./assets/presentation.css">
+</head>
+<body class="slide-page" data-home="index.html" data-prev="slide-01.html" data-next="slide-03.html" data-last="slide-08.html">
+  <div class="page-shell">
+    <header class="page-header">
+      <div class="brand">OpenSDLC Presentation Draft 02</div>
+      <div>Slide 02 of 08 · What OpenSDLC Changes</div>
+    </header>
+
+    <main class="slide-frame">
+      <div class="slide-number">02</div>
+      <div class="eyebrow">What It Changes</div>
+      <h1 class="section-title" style="margin-top: 18px;">OpenSDLC는 기존 개발 프로세스를 버리는 모델이 아니라, AI가 참여해도 통제 가능한 구조로 재구성하는 모델입니다.</h1>
+      <p class="section-subtitle">
+        즉 새로운 운영 철학을 조직에 강요하기보다, 운영 조직이 이미 알고 있는 `분석 -> 설계 -> 개발 -> 테스트`
+        흐름을 AI가 다룰 수 있는 산출물(Artifact)과 검증 게이트 중심 구조로 전환(Transformation)합니다.
+      </p>
+
+      <section class="columns comparison-columns" style="margin-top: 6mm;">
+        <article class="panel">
+          <div class="card-head">
+            <h3 class="panel-title">전형적인 AI 도입 접근</h3>
+            <span class="badge red">Tool First</span>
+          </div>
+          <ul>
+            <li>좋은 모델과 도구를 먼저 고르고 나중에 프로세스를 맞춥니다.</li>
+            <li>기존 업무 흐름과 책임 경계는 그대로 둔 채 일부 작업만 실험합니다.</li>
+            <li>자동화 범위가 커질수록 검수 기준과 추적성이 불분명해집니다.</li>
+          </ul>
+        </article>
+
+        <div class="comparison-arrow" aria-hidden="true">→</div>
+
+        <article class="panel">
+          <div class="card-head">
+            <h3 class="panel-title">OpenSDLC 접근</h3>
+            <span class="badge green">Process First</span>
+          </div>
+          <ul>
+            <li>기존 개발 프로세스 단계를 먼저 구조화하고 그 위에 AI 역할을 배치합니다.</li>
+            <li>각 작업 전환은 대화가 아니라 공식 artifact와 검증 게이트를 통해 이뤄집니다.</li>
+            <li>AI 도입 자체보다 운영 통제, 추적성, 재현성을 먼저 확보합니다.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="transition-grid">
+        <article class="transition-card">
+          <div class="transition-chip">핵심 전환 1: <strong>대화 중심</strong>에서 <strong>artifact 중심</strong>으로</div>
+          <div class="transition-diagram">
+            <div class="diagram-column consistent">
+              <div class="diagram-row fixed">
+                <div class="diagram-box fit">구두 요청</div>
+                <div class="diagram-arrow">→</div>
+                <div class="diagram-box fit">채팅 답변</div>
+              </div>
+              <div class="diagram-drop">
+                <div class="diagram-drop-arrow">↓</div>
+              </div>
+              <div class="diagram-row fixed">
+                <div class="diagram-box accent fit">UseCaseModel<br>Artifact</div>
+                <div class="diagram-arrow">→</div>
+                <div class="diagram-box accent fit">TestDesign<br>Artifact</div>
+              </div>
+            </div>
+            <p>즉 기록이 남지 않는 대화보다, 작업 전환 가능한 공식 산출물을 중심에 둡니다.</p>
+          </div>
+        </article>
+
+        <article class="transition-card">
+          <div class="transition-chip">핵심 전환 2: <strong>자기 선언</strong>에서 <strong>검증 판정</strong>으로</div>
+          <div class="transition-diagram">
+            <div class="diagram-column consistent compare">
+              <div class="compare-group">
+                <div class="compare-label bad">X 자기 선언 기준</div>
+                <div class="diagram-row fixed">
+                  <div class="diagram-box fit">생산 역할</div>
+                  <div class="diagram-arrow">→</div>
+                  <div class="diagram-box fit">"잘 됐습니다"</div>
+                </div>
+              </div>
+              <div class="diagram-drop">
+                <div class="diagram-drop-arrow">↓</div>
+              </div>
+              <div class="compare-group">
+                <div class="compare-label good">O 검증 결과 기준</div>
+                <div class="diagram-row fixed">
+                  <div class="diagram-box warn fit">ValidationReport<br>Artifact</div>
+                  <div class="diagram-arrow">→</div>
+                  <div class="diagram-box accent fit">pass / warning / fail</div>
+                </div>
+              </div>
+            </div>
+            <p>즉 생산 역할의 주장보다, 검증 산출물의 판정이 다음 진행 기준이 됩니다.</p>
+          </div>
+        </article>
+
+        <article class="transition-card">
+          <div class="transition-chip">핵심 전환 3: <strong>한 번에 많이</strong>에서 <strong>작게 시작하고 반복</strong>으로</div>
+          <div class="transition-diagram">
+            <div class="diagram-stack">
+              <div class="diagram-bar one"></div>
+              <div class="diagram-bar two"></div>
+              <div class="diagram-bar three"></div>
+            </div>
+            <div class="diagram-row">
+              <div class="diagram-box">작은 파일럿</div>
+              <div class="diagram-arrow">→</div>
+              <div class="diagram-box accent">반복 확장</div>
+            </div>
+            <p>즉 처음부터 전면 자동화하지 않고, 검증 가능한 범위부터 시작해 점진적으로 넓혀 갑니다.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div class="deck-nav">
+      <div class="nav-group">
+        <a class="nav-link" href="./index.html">Index</a>
+        <a class="nav-link" href="./slide-01.html">01</a>
+        <a class="nav-link current" href="./slide-02.html">02</a>
+        <a class="nav-link" href="./slide-03.html">03</a>
+        <a class="nav-link" href="./slide-04.html">04</a>
+        <a class="nav-link" href="./slide-05.html">05</a>
+        <a class="nav-link" href="./slide-06.html">06</a>
+        <a class="nav-link" href="./slide-07.html">07</a>
+        <a class="nav-link" href="./slide-08.html">08</a>
+        <a class="nav-link" href="./appendix-01.html">A1</a>
+      </div>
+      <div class="nav-links">
+        <a class="nav-link" href="./slide-01.html">이전 장표</a>
+        <a class="nav-link" href="./slide-03.html">다음 장표</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/presentation.js"></script>
+</body>
+</html>
