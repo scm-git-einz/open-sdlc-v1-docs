@@ -80,6 +80,16 @@ a {
   font-weight: 700;
 }
 
+.page-meta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3mm;
+  margin-left: auto;
+  text-align: right;
+  flex-wrap: nowrap;
+}
+
 .page-header .brand::before {
   content: "";
   width: 14mm;
@@ -87,6 +97,26 @@ a {
   border-radius: 999px;
   background: linear-gradient(90deg, var(--cyan), var(--emerald));
   box-shadow: 0 0 24px rgba(93, 214, 255, 0.32);
+}
+
+.company-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 8.6mm;
+  padding: 0 3.8mm;
+  border-radius: 999px;
+  border: 1px solid rgba(93, 214, 255, 0.16);
+  background: rgba(255, 255, 255, 0.04);
+  color: #d8e7f7;
+  font-size: 8.8pt;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.company-badge:hover {
+  border-color: rgba(93, 214, 255, 0.24);
+  background: rgba(93, 214, 255, 0.08);
 }
 
 .hero-card,
@@ -177,8 +207,18 @@ a {
   line-height: 1.1;
 }
 
-.hero-title .accent {
+.hero-title .accent,
+.section-title .accent {
   color: var(--cyan);
+}
+
+.inline-accent-note {
+  display: inline-block;
+  white-space: nowrap;
+  color: var(--cyan);
+  font-size: 0.72em;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 .hero-subtitle,
@@ -202,6 +242,20 @@ a {
 .section-subtitle {
   margin-top: 3.6mm;
   font-size: 11.4pt;
+}
+
+.slide-page .hero-title,
+.slide-page .section-title {
+  max-width: 258mm;
+  font-size: 24.5pt;
+  line-height: 1.12;
+}
+
+.slide-page .hero-subtitle,
+.slide-page .section-subtitle {
+  max-width: 250mm;
+  font-size: 11.8pt;
+  line-height: 1.56;
 }
 
 .button-row,
